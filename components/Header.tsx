@@ -31,10 +31,10 @@ const Header = () => {
 
       <div className="flex items-center space-x-6">
         <div className="flex space-x-3">
-          <a href="https://twitter.com/Gamepayy">
+          <a href="https://twitter.com/Gamepayy" target={"_blank"}>
             <Image src={twitter} alt="twitter" width={32} />
           </a>
-          <a href="https://discord.gg/wZP6hC8W">
+          <a href="https://discord.gg/wZP6hC8W" target={"_blank"}>
             <Image src={discord} alt="discord" width={32} />
           </a>
         </div>
