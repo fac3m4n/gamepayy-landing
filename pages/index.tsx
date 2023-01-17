@@ -7,6 +7,9 @@ import hero from "../public/images/hero.png";
 
 import arrow from "../public/images/arrow.png";
 const Home: NextPage = () => {
+  const openInNewTab = (url: string | URL | undefined) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
   return (
     <div className="flex h-screen w-full flex-col bg-[url('../public/images/bg-gradient1.png')] px-6">
       <Head>
@@ -35,7 +38,12 @@ const Home: NextPage = () => {
               gaming platform
             </p>
           </div>
-          <button className="btn-primary">Become an early adopter</button>
+          <button
+            className="btn-primary"
+            onClick={() => openInNewTab("https://gamepayy.com")}
+          >
+            Become an early adopter
+          </button>
         </div>
       </div>
     </div>
