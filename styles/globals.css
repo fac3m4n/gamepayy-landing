@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+p {
+    font-size: 16px;
+}
+
+button {
+    font-size: 14px;
+}
+
+@layer components {
+  .btn-primary {
+    @apply uppercase text-gray-900 bg-primary px-[16px] py-[12px] font-semibold;
+  }
+
+  .btn-secondary {
+    @apply uppercase border-[1px] border-primary px-[16px] py-[8px] hover:bg-[#71ef715b] font-semibold;
+  }
+}
