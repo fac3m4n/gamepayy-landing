@@ -5,6 +5,9 @@ import twitter from "../public/images/twitter.png";
 import discord from "../public/images/discord.png";
 
 const Header = () => {
+  const openInNewTab = (url: string | URL | undefined) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
   return (
     <div className="w-full flex justify-between text-white items-center z-10 py-6">
       <div className="flex items-center space-x-6">
@@ -35,7 +38,12 @@ const Header = () => {
             <Image src={discord} alt="discord" width={32} />
           </a>
         </div>
-        <button className="btn-secondary">Launch App</button>
+        <button
+          className="btn-secondary"
+          onClick={() => openInNewTab("https://gamepayy.com")}
+        >
+          Launch App
+        </button>
       </div>
     </div>
   );
