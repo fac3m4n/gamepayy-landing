@@ -40,7 +40,7 @@ const Header = () => {
         </div>
         <button
           className="btn-secondary"
-          onClick={() => openInNewTab("https://gamepay-app.vercel.app/")}
+          onClick={() => openInNewTab("https://app.gamepayy.com/")}
         >
           Launch App
         </button>
