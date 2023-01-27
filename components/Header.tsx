@@ -34,7 +34,7 @@ const Header = () => {
           <a href="https://twitter.com/Gamepayy" target={"_blank"}>
             <Image src={twitter} alt="twitter" width={32} />
           </a>
-          <a href="https://discord.gg/wZP6hC8W" target={"_blank"}>
+          <a href="https://discord.gg/RykEns2hnw" target={"_blank"}>
             <Image src={discord} alt="discord" width={32} />
           </a>
         </div>
