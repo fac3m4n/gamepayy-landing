@@ -1,26 +1,33 @@
-import React from "react";
-import hero from "../public/images/hero.png";
-import Image from "next/image";
+import React from 'react';
+import hero from '../public/images/hero.png';
+import Image from 'next/image';
+import arrow from '../public/images/arrow.png';
 
 const Hero = () => {
+  const openInNewTab = (url: string | URL | undefined) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
   return (
-    <div className="flex w-full h-screen text-white justify-around items-center z-10">
-      <div className="px-10 space-y-10 w-1/2">
-        <h1 className="leading-none">
-          Best Gaming <br />
-          platform ever
+    <div className='text-white h-screen flex flex-col items-start sm:items-center md:flex-row-reverse md:justify-around z-10'>
+      <Image src={hero} alt='hero' className='sm:w-[300px] md:w-[500px]' />
+
+      <div className='flex flex-col items-start space-y-6 md:w-1/2'>
+        <h1 className='leading-none text-[32px] md:text-[48px]'>
+          Social Matchmaking Platform for Competitive Gamers
         </h1>
-        <div className="flex flex-col space-y-[47px] items-start justify-start">
-          <p>
-            Game Payy is an amet minim mollit non deserunt ullamco est sit
-            aliqua dolor do amet sint. Game Payy is an amet minim mollit non
-            deserunt ullamco est sit aliqua dolor do amet sint.
+        <div className='flex justify-center items-start'>
+          <Image src={arrow} alt='arrow' width={48} />
+          <p className='md:text-[20px]'>
+            Experience the thrill of competition and earn rewards on our new
+            gaming platform
           </p>
-          <button className="btn-primary">Become an early adopter</button>
         </div>
-      </div>
-      <div className="w-1/2">
-        <Image src={hero} alt="hero" width={450} />
+        <button
+          className='btn-primary'
+          onClick={() => openInNewTab('https://gamepayy.com')}
+        >
+          Become an early adopter
+        </button>
       </div>
     </div>
   );
