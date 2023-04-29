@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 h1 {
   font-size: 48px;
   font-weight: 600;
@@ -15,11 +12,11 @@ h2 {
 }
 
 p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 button {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 @layer components {
@@ -30,4 +27,31 @@ button {
   .btn-secondary {
     @apply uppercase border-[1px] border-primary px-[16px] py-[8px] hover:bg-[#71ef715b] font-semibold;
   }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #71ef71 !important;
 }

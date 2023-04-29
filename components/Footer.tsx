@@ -1,24 +1,136 @@
-import React from "react";
-import Image from "next/image";
-import logo from "../public/images/logo.png";
+import React from 'react';
+import Image from 'next/image';
+import logo from '../public/images/logo.png';
+import { FaDiscord, FaTwitter } from 'react-icons/fa';
+
+import { AiFillInstagram, AiFillFacebook } from 'react-icons/ai';
 
 const Footer = () => {
   return (
-    <footer className="flex z-10 justify-around w-full items-start h-full">
-      <div className="flex flex-col justify-between">
-        <div>
-          <Image src={logo} alt="logo" width={64} />
-          <div className="flex">
-            <Image src={logo} alt="logo" width={24} />
-            <Image src={logo} alt="logo" width={24} />
-            <Image src={logo} alt="logo" width={24} />
-            <Image src={logo} alt="logo" width={24} />
+    <footer className='w-full text-white body-font'>
+      <div className='container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap'>
+        <div className='flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left'>
+          <a className='flex items-center justify-center font-medium text-white title-font md:justify-start'>
+            <Image src={logo} alt='logo' width={96} />
+          </a>
+          <p className='mt-2 text-sm text-gray-500'>
+            Compete, Connect and Earn!
+          </p>
+          <div className='mt-4'>
+            <span className='inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start'>
+              <a className='text-gray-500 cursor-pointer hover:text-white'>
+                <FaDiscord size={24} />
+              </a>
+              <a className='ml-3 text-gray-500 cursor-pointer hover:text-white'>
+                <FaTwitter size={24} />
+              </a>
+              <a className='ml-3 text-gray-500 cursor-pointer hover:text-white'>
+                <AiFillFacebook size={24} />
+              </a>
+              <a className='ml-3 text-gray-500 cursor-pointer hover:text-white'>
+                <AiFillInstagram size={24} />
+              </a>
+            </span>
           </div>
         </div>
-        <p>Gamepayy, 2022</p>
+        <div className='flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left'>
+          <div className='w-full px-4 lg:w-1/4 md:w-1/2'>
+            <h2 className='mb-3 text-sm font-medium tracking-widest text-white uppercase title-font'>
+              About
+            </h2>
+            <nav className='mb-10 list-none'>
+              <li className='mt-3'>
+                <a className='text-gray-500 cursor-pointer hover:text-white'>
+                  Company
+                </a>
+              </li>
+              <li className='mt-3'>
+                <a className='text-gray-500 cursor-pointer hover:text-white'>
+                  Careers
+                </a>
+              </li>
+              <li className='mt-3'>
+                <a className='text-gray-500 cursor-pointer hover:text-white'>
+                  Blog
+                </a>
+              </li>
+            </nav>
+          </div>
+          <div className='w-full px-4 lg:w-1/4 md:w-1/2'>
+            <h2 className='mb-3 text-sm font-medium tracking-widest text-white uppercase title-font'>
+              Support
+            </h2>
+            <nav className='mb-10 list-none'>
+              <li className='mt-3'>
+                <a className='text-gray-500 cursor-pointer hover:text-white'>
+                  Contact Support
+                </a>
+              </li>
+              <li className='mt-3'>
+                <a className='text-gray-500 cursor-pointer hover:text-white'>
+                  Help Resources
+                </a>
+              </li>
+              <li className='mt-3'>
+                <a className='text-gray-500 cursor-pointer hover:text-white'>
+                  Release Updates
+                </a>
+              </li>
+            </nav>
+          </div>
+          <div className='w-full px-4 lg:w-1/4 md:w-1/2'>
+            <h2 className='mb-3 text-sm font-medium tracking-widest text-white uppercase title-font'>
+              Platform
+            </h2>
+            <nav className='mb-10 list-none'>
+              <li className='mt-3'>
+                <a className='text-gray-500 cursor-pointer hover:text-white'>
+                  Terms &amp; Privacy
+                </a>
+              </li>
+              <li className='mt-3'>
+                <a className='text-gray-500 cursor-pointer hover:text-white'>
+                  Pricing
+                </a>
+              </li>
+              <li className='mt-3'>
+                <a className='text-gray-500 cursor-pointer hover:text-white'>
+                  FAQ
+                </a>
+              </li>
+            </nav>
+          </div>
+          <div className='w-full px-4 lg:w-1/4 md:w-1/2'>
+            <h2 className='mb-3 text-sm font-medium tracking-widest text-white uppercase title-font'>
+              Contact
+            </h2>
+            <nav className='mb-10 list-none'>
+              <li className='mt-3'>
+                <a className='text-gray-500 cursor-pointer hover:text-white'>
+                  Send a Message
+                </a>
+              </li>
+              <li className='mt-3'>
+                <a className='text-gray-500 cursor-pointer hover:text-white'>
+                  Request a Quote
+                </a>
+              </li>
+              <li className='mt-3'>
+                <a className='text-gray-500 cursor-pointer hover:text-white'>
+                  +123-456-7890
+                </a>
+              </li>
+            </nav>
+          </div>
+        </div>
       </div>
-
-      <div>texts</div>
+      <div className=''>
+        <div className='container px-5 py-4 mx-auto'>
+          <p className='text-sm text-white capitalize xl:text-center'>
+            © 2023 All rights reserved{' '}
+          </p>
+        </div>
+      </div>
     </footer>
   );
 };
