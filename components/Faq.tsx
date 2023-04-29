@@ -5,8 +5,8 @@ const Faq = () => {
   function toggleAccordion(id: number) {
     const accordion = document.getElementById(`accordion${id}`);
     const chevron = document.getElementById(`chevron${id}`);
-    accordion.classList.toggle('hidden');
-    chevron.classList.toggle('rotate-180');
+    accordion?.classList.toggle('hidden');
+    chevron?.classList.toggle('rotate-180');
   }
 
   const faqData = [
