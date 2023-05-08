@@ -9,7 +9,7 @@ import {
 const Features = () => {
   return (
     <section className="flex flex-col text-white mt-20 mb-20 text-center">
-      <h2 className="mb-5">A revolutionary gaming platform</h2>
+      <h2 className="mb-5">A Revolutionary Gaming Platform</h2>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
         <div className="p-6 border-4 border-transparent rounded-lg hover:border-secondary hover:shadow-lg hover:scale-105 transition duration-300 flex flex-col items-center justify-center">
           <RiTrophyFill size={100} />

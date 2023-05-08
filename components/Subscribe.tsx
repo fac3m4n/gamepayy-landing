@@ -5,7 +5,7 @@ import jinx from "../public/images/jinx.png";
 const Subscribe = () => {
   return (
     <div
-      className="relative w-full flex bg-black justify-between items-center text-white mt-24 mb-16"
+      className="relative w-full flex bg-gray-900 justify-between items-center text-white mt-24 mb-16"
       id="boxShadow"
     >
       <div className="ml-24 flex space-x-4">
@@ -18,7 +18,7 @@ const Subscribe = () => {
             Email
           </label>
         </div>
-        <button className="btn-secondary">Subscribe</button>
+        <button className="btn-third">Subscribe</button>
       </div>
 
       <Image src={jinx} alt="jinx" />

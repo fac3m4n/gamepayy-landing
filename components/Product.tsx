@@ -1,6 +1,9 @@
 import React from "react";
-import dummy from "../public/images/dummy.png";
 import Image from "next/image";
+
+import cash from "../public/images/cash.png";
+import main from "../public/images/main.png";
+import profile from "../public/images/profile.png";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,7 +13,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Navigation, Pagination } from "swiper";
 
 const Product = () => {
   const openInNewTab = (url: string | URL | undefined) => {
@@ -34,13 +37,13 @@ const Product = () => {
       <div className="w-2/3">
         <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
           <SwiperSlide>
-            <Image src={dummy} alt="dummy" loading="lazy" />
+            <Image src={main} alt="main" loading="lazy" />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={dummy} alt="dummy" loading="lazy" />
+            <Image src={profile} alt="profile" loading="lazy" />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={dummy} alt="dummy" loading="lazy" />
+            <Image src={cash} alt="cash" loading="lazy" />
           </SwiperSlide>
         </Swiper>
       </div>
