@@ -66,7 +66,7 @@ const Faq = () => {
   ];
 
   return (
-    <section className="text-white w-max-7xl px-10 mt-20 mb-20">
+    <section className="text-white w-max-7xl mt-20 mb-20 sm:px-5">
       <h2 className="text-center">FAQs?</h2>
       <div>
         {faqData.map((faq) => (

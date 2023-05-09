@@ -20,8 +20,8 @@ const Product = () => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
   return (
-    <section className="flex flex-row items-start text-white justify-around">
-      <div className="w-1/3 space-y-5">
+    <section className="flex flex-col sm:flex-row items-start text-white justify-around space-y-4 sm:space-y-0">
+      <div className="w-full sm:w-1/3 space-y-5">
         <h2 className="leading-none">Tired of "playing games"?</h2>
         <p>
           Experience the thrill of competition and earn rewards on our new
@@ -34,16 +34,16 @@ const Product = () => {
           Become an early adopter
         </button>
       </div>
-      <div className="w-2/3">
+      <div className="w-full sm:w-2/3">
         <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
           <SwiperSlide>
-            <Image src={main} alt="main" loading="lazy" />
+            <Image src={main} alt="main" />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={profile} alt="profile" loading="lazy" />
+            <Image src={profile} alt="profile" />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={cash} alt="cash" loading="lazy" />
+            <Image src={cash} alt="cash" />
           </SwiperSlide>
         </Swiper>
       </div>

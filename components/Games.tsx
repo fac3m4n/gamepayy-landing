@@ -26,9 +26,9 @@ const Games = () => {
   const navigationNextRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section className="flex flex-row items-start justify-between space-x-5 text-white select-none">
+    <section className="flex sm:flex-row flex-col items-start justify-between sm:space-x-5 space-y-4 sm:space-y-0 text-white select-none h-screen sm:h-1/2 mt-20 sm:mt-0">
       {/* left */}
-      <div className="w-1/3 flex flex-col text-white space-y-6">
+      <div className="w-full sm:w-1/3 flex flex-col text-white space-y-6">
         <h2 className="leading-none">
           Earn rewards playing your favorite games
         </h2>
@@ -89,38 +89,38 @@ const Games = () => {
               spaceBetween: 20,
             },
           }}
-          modules={[A11y, Navigation]}
+          modules={[Navigation]}
           className="mySwiper"
         >
           <SwiperSlide>
-            <Image src={cod} alt="cod" />
+            <Image src={cod} alt="cod" unoptimized={true} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={halo} alt="cod" />
+            <Image src={halo} alt="cod" unoptimized={true} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={lol} alt="cod" />
+            <Image src={lol} alt="cod" unoptimized={true} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={fortnite} alt="cod" />
+            <Image src={fortnite} alt="cod" unoptimized={true} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={apex} alt="cod" />
+            <Image src={apex} alt="cod" unoptimized={true} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={fifa} alt="cod" />
+            <Image src={fifa} alt="cod" unoptimized={true} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={nba} alt="cod" />
+            <Image src={nba} alt="cod" unoptimized={true} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={ssmash} alt="cod" />
+            <Image src={ssmash} alt="cod" unoptimized={true} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={rocket} alt="cod" />
+            <Image src={rocket} alt="cod" unoptimized={true} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={madden} alt="cod" />
+            <Image src={madden} alt="cod" unoptimized={true} />
           </SwiperSlide>
         </Swiper>
       </div>
