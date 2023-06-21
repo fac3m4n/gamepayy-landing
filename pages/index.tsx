@@ -3,11 +3,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
 import bg from "../public/images/bg-gradient.png";
-import hero from "../public/images/hero.png";
-import join from "../public/images/join.png";
-import jinx from "../public/images/jinx.png";
 
-import React, { useRef, useState } from "react";
+import React from "react";
 
 import Games from "../components/Games";
 import Features from "../components/Features";
@@ -17,6 +14,7 @@ import CTA from "../components/CTA";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Subscribe from "../components/Subscribe";
+import Script from "next/script";
 
 const Home: NextPage = () => {
   const openInNewTab = (url: string | URL | undefined) => {
@@ -30,8 +28,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Image src={bg} alt="background" className="absolute -z-1" fill />
-      <Header />
+      {/* <Header /> */}
 
       <Hero />
 
@@ -54,7 +51,7 @@ const Home: NextPage = () => {
 
       <Subscribe />
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

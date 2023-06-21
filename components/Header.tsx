@@ -3,14 +3,15 @@ import Image from "next/image";
 import logo from "../public/images/logo.png";
 import twitter from "../public/images/twitter.png";
 import discord from "../public/images/discord.png";
+import Link from "next/link";
 
 const Header = () => {
   const openInNewTab = (url: string | URL | undefined) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
   return (
-    <div className="w-full flex justify-between text-white items-center z-10 py-6">
-      <div className="flex items-center space-x-6">
+    <div className="w-full flex justify-between text-white items-center z-10 py-6 px-6">
+      <Link className="flex items-center space-x-6" href={"/"}>
         <Image src={logo} alt="logo" width={64} />
 
         {/* <ul className="style">
@@ -27,7 +28,7 @@ const Header = () => {
             <a href="about.asp">About</a>
           </li>
         </ul> */}
-      </div>
+      </Link>
 
       <div className="flex items-center space-x-6">
         <div className="flex space-x-3">

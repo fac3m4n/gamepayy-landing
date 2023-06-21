@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import localFont from "@next/font/local";
+import Layout from "../components/Layout";
 
 const clash = localFont({
   src: [
@@ -42,7 +43,9 @@ const clash = localFont({
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <main className={`${clash.variable} font-sans`}>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </main>
   );
 }

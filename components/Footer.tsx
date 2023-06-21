@@ -8,7 +8,7 @@ import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <footer className="w-full text-white body-font">
+    <footer className="w-full text-white body-font bg-black">
       <div className="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
         <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
           <a className="flex items-center justify-center font-medium text-white title-font md:justify-start">
@@ -61,7 +61,7 @@ const Footer = () => {
                   Company
                 </a>
               </li>
-              <li className="mt-3">
+              {/* <li className="mt-3">
                 <a className="text-gray-500 cursor-pointer hover:text-white">
                   Careers
                 </a>
@@ -70,7 +70,7 @@ const Footer = () => {
                 <a className="text-gray-500 cursor-pointer hover:text-white">
                   Blog
                 </a>
-              </li>
+              </li> */}
             </nav>
           </div>
           <div className="w-full px-4 lg:w-1/4 md:w-1/2">
@@ -80,10 +80,10 @@ const Footer = () => {
             <nav className="mb-10 list-none">
               <li className="mt-3">
                 <a className="text-gray-500 cursor-pointer hover:text-white">
-                  Contact Support
+                  FAQ
                 </a>
               </li>
-              <li className="mt-3">
+              {/* <li className="mt-3">
                 <a className="text-gray-500 cursor-pointer hover:text-white">
                   Help Resources
                 </a>
@@ -92,27 +92,36 @@ const Footer = () => {
                 <a className="text-gray-500 cursor-pointer hover:text-white">
                   Release Updates
                 </a>
-              </li>
+              </li> */}
             </nav>
           </div>
           <div className="w-full px-4 lg:w-1/4 md:w-1/2">
             <h2 className="mb-3 text-sm font-medium tracking-widest text-white uppercase title-font">
-              Platform
+              Legal
             </h2>
             <nav className="mb-10 list-none">
               <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-white">
-                  Terms &amp; Privacy
+                <a
+                  className="text-gray-500 cursor-pointer hover:text-white"
+                  href="/terms"
+                >
+                  Terms &amp; Services
                 </a>
               </li>
               <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-white">
-                  Pricing
+                <a
+                  className="text-gray-500 cursor-pointer hover:text-white"
+                  href="/fairplay"
+                >
+                  Fairplay Policy
                 </a>
               </li>
               <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-white">
-                  FAQ
+                <a
+                  className="text-gray-500 cursor-pointer hover:text-white"
+                  href="/privacy"
+                >
+                  Privacy Policy
                 </a>
               </li>
             </nav>
@@ -123,18 +132,17 @@ const Footer = () => {
             </h2>
             <nav className="mb-10 list-none">
               <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-white">
-                  1750 N Bayshore Dr
-                </a>
+                <a className="text-gray-500">1750 N Bayshore Dr</a>
               </li>
               <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-white">
-                  Miami, Florida 33132
-                </a>
+                <a className="text-gray-500">Miami, Florida 33132</a>
               </li>
               <li className="mt-3">
-                <a className="text-gray-500 cursor-pointer hover:text-white">
-                  +123-456-7890
+                <a
+                  className="text-gray-500 cursor-pointer hover:text-white"
+                  href="mailto:info@gamepayy.com"
+                >
+                  info@gamepayy.com
                 </a>
               </li>
             </nav>
