@@ -24,7 +24,11 @@ const Hero = () => {
         </div>
         <button
           className="btn-primary"
-          onClick={() => openInNewTab("https://gamepayy.com")}
+          onClick={() =>
+            openInNewTab(
+              "https://docs.google.com/forms/d/e/1FAIpQLScSl2dbnvlS9QV8Es52AFdNJ0SOWZJfwMtZZBD8phxjlu7XXw/viewform?usp=sf_link"
+            )
+          }
         >
           Become an early adopter
         </button>
