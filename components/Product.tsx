@@ -29,7 +29,7 @@ const Product = () => {
         </p>
         <button
           className="btn-primary"
-          onClick={() => openInNewTab("https://forms.gle/5SNz7ZEy7NfYsscm9")}
+          onClick={() => openInNewTab("https://forms.gle/3YZpFD9gxfpDagrH9")}
         >
           Become an early adopter
         </button>
