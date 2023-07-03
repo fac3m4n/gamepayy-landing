@@ -2,6 +2,8 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import localFont from "@next/font/local";
 import Layout from "../components/Layout";
+import Script from "next/script";
+import Head from "next/head";
 
 const clash = localFont({
   src: [
@@ -42,11 +44,33 @@ const clash = localFont({
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <main className={`${clash.variable} font-sans`}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </main>
+    <>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      />
+
+      <Script strategy="lazyOnload">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+            page_path: window.location.pathname,
+            });
+        `}
+      </Script>
+
+      <Head>
+        <title>GamePayy</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <main className={`${clash.variable} font-sans`}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </main>
+    </>
   );
 }
 

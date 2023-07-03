@@ -23,11 +23,6 @@ const Home: NextPage = () => {
 
   return (
     <div className="flex h-full w-full flex-col px-6 bg-black">
-      <Head>
-        <title>GamePayy</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       {/* <Header /> */}
 
       <Hero />

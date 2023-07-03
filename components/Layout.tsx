@@ -11,21 +11,6 @@ interface LayoutProps {
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div className="flex flex-col">
-      <Head>
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-RYL17ZX17Z%22%3E"
-        ></Script>
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RYL17ZX17Z');
-  `}
-        </Script>
-      </Head>
       <Image
         src={bg}
         alt="background"
