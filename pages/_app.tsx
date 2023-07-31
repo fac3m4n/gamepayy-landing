@@ -4,6 +4,7 @@ import localFont from "@next/font/local";
 import Layout from "../components/Layout";
 import Script from "next/script";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react";
 
 const clash = localFont({
   src: [
@@ -68,6 +69,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <main className={`${clash.variable} font-sans`}>
         <Layout>
           <Component {...pageProps} />
+          <Analytics />
         </Layout>
       </main>
     </>
